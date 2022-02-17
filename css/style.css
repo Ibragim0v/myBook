@@ -13,4 +13,55 @@
   font-weight: 700;
   src: local(""), url("./../font/montserrat-v23-latin-700.woff2") format("woff2"), url("./../font/montserrat-v23-latin-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clr {
+  clear: both;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.hero {
+  background-color: #252B42;
+}
+.hero__container {
+  max-width: 1111px;
+  width: 100%;
+}
+.hero__heading {
+  width: 475px;
+}
+.hero__paragraph {
+  width: 500px;
+}
+.hero__btn {
+  width: 194px;
+  height: 62px;
 }/*# sourceMappingURL=style.css.map */
