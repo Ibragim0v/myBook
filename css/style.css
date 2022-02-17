@@ -51,10 +51,6 @@ img {
 .hero {
   background-color: #252B42;
 }
-.hero__container {
-  max-width: 1111px;
-  width: 100%;
-}
 .hero__heading {
   width: 475px;
 }
