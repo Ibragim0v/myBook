@@ -6,40 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>myBook</title>
+    <title>MyBook</title>
 </head>
 <body>
-    
     <!-- HERO -->
     <header class="hero">
-        <div class="container hero__container d-flex justify-content-center text-center">
-            <div class="hero__main">
-                <div class="hero__logo pt-2 pb-4">
-                    <a href="#" class="hero__link-logo">
-                        <img src="./img/logo.svg" alt="logo" class="hero__img-logo mb-4">
+        <div class="container d-flex justify-content-center">
+            <div class="hero__main mb-5 text-white">
+                <div class="hero__logo mb-5 text-center pe-5 me-5">
+                    <a href="#" class="hero__link-logo me-5">
+                        <img src="./img/logo.svg" alt="logo" class="hero__img-logo">
                     </a>
                 </div>
-                
-                <div class="hero__text pb-4">
-                    <h1 class="hero__heading text-white pb-4 fw-bold display-4 lh-base text-center ps-2">Salom Bootstrap</h1>
-                    <p class="hero__paragraph text-white text-center">An audio book, eBook, and interview series for people who make things.</p>
-                </div>
 
-                <div class="hero__comment">
-                    <ul class="hero__list d-flex align-items-center mb-5 ps-4">
-                        <li class="hero__item me-2">
-                            <button type="button" class="btn hero__btn btn-primary">Buy Now</button>
-                        </li>
+                <div class="hero__book">
+                    <h1 class="hero__heading mb-2 display-5 w-50 ms-5 ps-5 fw-bold text-center">Salom bootstrap</h1>
+                    <p class="hero__text w-75 text-center mb-1">An audio book, eBook, and interview series for people who make things.</p>
 
-                        <li class="hero__item d-flex">
-                            <img src="./img/stars.svg" alt="star" class="hero__img-item me-1" width="132" height="23">
-                            <p class="hero__rating text-white">30 Ratings</p>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="order__group d-flex align-items-center">
+                        <button type="button" class="btn btn-primary w-25 me-2 ms-5 pe-4 ps-4">Buy Now</button>
+                        <img src="./img/stars.svg" alt="stars" class="order__star mt-1 me-1" width="132" height="24">
+                        <p class="order__rating mt-3">30 Ratings</p>
+                    </div>
 
-                <div class="hero__image pb-5">
-                    <img src="./img/book.jpg" alt="book" class="hero__img mb-5" width="455" height="685">
+                    <img src="./img/book.jpg" alt="book" class="hero__book rounded-3 mt-5 mb-5 " width="454" height="685">
                 </div>
             </div>
         </div>
@@ -47,25 +37,152 @@
     <!-- /HERO -->
 
     <!-- SIDEBAR -->
-    <section class="sidebar">
-        <div class="sidebar__container container">
+    <section class="sidebar mb-5 pb-5 mt-5 pt-5">
+        <div class="container">
             <div class="sidebar__main">
-                
+                <ul class="sidebar__list d-flex list-unstyled justify-content-center">
+                    <li class="sidebar__item me-5">
+                        <h5 class="sidebar__heading text-primary fw-bold text-center">Who is it for?</h5>
+                        <p class="sidebar__text fw-light fs-6 text-center p-2">So it really behaves like neither. Now we have given up. We say: “It is like neither.” produced an increasing confusion which was finally resolved in 1926 and 1927 by Schrödinger, Heisenberg, and Born.</p>
+                    </li>
+                    <li class="sidebar__item me-5 ms-5">
+                        <h5 class="sidebar__heading text-primary fw-bold text-center">What’s Covered</h5>
+                        <p class="sidebar__text fw-light fs-6 text-center p-2">They do not behave like waves, they do not behave like particles, they do not behave like clouds, or billiard balls, or weights on springs, or like anything that you have ever seen.</p>
+                    </li>
+                    <li class="sidebar__item ms-5">
+                        <h5 class="sidebar__heading text-primary fw-bold text-center">What Do I Get?</h5>
+                        <p class="sidebar__text fw-light fs-6 text-center p-2">The gradual accumulation of information about atomic and small-scale behavior during the first quarter of the 20th century, which gave some indications about how small things do behave,</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
     <!-- /SIDEBAR -->
-    
+
+    <!-- ORDER -->
+    <section class="order mb-5 pb-5">
+        <div class="container">
+            <div class="order__main text-center">
+                <h1 class="order__text mb-5">Take a look Inside our book:</h1>
+                <img src="./img/person.jpg" alt="person" class="order__img" width="688" height="363">
+
+                <div class="order__group d-flex justify-content-center mt-3">
+                    <button type="button" class="btn btn-primary me-2">Order Your Copy</button>
+                    <img src="./img/stars.svg" alt="stars" class="order__star mt-1 me-1" width="132" height="24">
+                    <p class="order__rating mt-1">30 Ratings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /ORDER -->
+
+    <!-- WIDGET -->
+    <section class="widget mb-5 pb-5">
+        <div class="container">
+            <div class="widget__main">
+                <h1 class="widget__text text-center mb-5 pb-5">Praise for the book</h1>
+
+                <ul class="widget__list d-flex list-unstyled mb-5 pb-5">
+                    <li class="widget__item p-3 me-3 list-group-item">
+                        <img src="./img/stars.svg" alt="stars" class="widget__stars mb-1 mt-2" width="132" height="24">
+                        <p class="widget__text-item w-75">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+                        <div class="widget__person d-flex">
+                            <img src="./img/client.jpg" alt="client" class="widget__img-client rounded-circle me-1" width="50" height="50">
+                            <div class="widget__wrapper text-start">
+                                <p class="widget__name fw-bold text-primary m-0">Regina Miles</p>
+                                <p class="widget__job fw-bold m-0 ">Designer</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="widget__item p-3 me-3 list-group-item">
+                        <img src="./img/stars.svg" alt="stars" class="widget__stars mb-1 mt-2" width="132" height="24">
+                        <p class="widget__text-item w-75">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+                        <div class="widget__person d-flex">
+                            <img src="./img/client.jpg" alt="client" class="widget__img-client rounded-circle me-1" width="50" height="50">
+                            <div class="widget__wrapper text-start">
+                                <p class="widget__name fw-bold text-primary m-0">Regina Miles</p>
+                                <p class="widget__job fw-bold m-0 ">Designer</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="widget__item p-3 list-group-item">
+                        <img src="./img/stars.svg" alt="stars" class="widget__stars mb-1 mt-2" width="132" height="24">
+                        <p class="widget__text-item w-75">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+                        <div class="widget__person d-flex">
+                            <img src="./img/client.jpg" alt="client" class="widget__img-client rounded-circle me-1" width="50" height="50">
+                            <div class="widget__wrapper text-start">
+                                <p class="widget__name fw-bold text-primary m-0">Regina Miles</p>
+                                <p class="widget__job fw-bold m-0 ">Designer</p>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- /WIDGET -->
+
+    <!-- BASIC -->
+    <section class="basic ">
+        <div class="container d-flex justify-content-center">
+            <div class="basic__main mb-5">
+                <h1 class="basic__heading text-center mb-5 pt-5">Who wrote the book?</h1>
+
+                <div class="basic__writer d-flex align-items-center">
+                    <img src="./img/writer.jpg" alt="writer" class="basic__img rounded-circle me-4" width="245" height="245">
+
+                    <div class="basic__text">
+                        <h3 class="basic__heading-text fw-bold">Kevin William</h3>
+                        <p class="basic__paragraph-text text-secondary fw-lights">Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /BASIC -->
+
+    <!-- SEASON -->
+    <section class="season">
+        <div class="container mt-5 ">
+            <div class="season__main">
+                <div class="season__left-side text-white pb-5 pt-5">
+                    <h2 class="h1 fw-bold w-25 pt-5">Start Reading Now!</h2>
+                    <p class="season__text w-25">An audio book, eBook, and interview series for people who make things.</p>
+
+                    <ul class="season__list list-unstyled mt-4">
+                        <li class="season__item">
+                            <button type="button" class="btn btn-primary fw-bold mb-3 w-25">Buy Hardback</button>
+                        </li>
+
+                        <li class="season__item">
+                            <button type="button" class="btn btn-primary fw-bold mb-3 w-25">Download eBook</button>
+                        </li>
+
+                        <li class="season__item">
+                            <button type="button" class="btn btn-primary w-25 fw-bold">Read Online</button>
+                        </li>
+                    </ul>
+
+                    <p class="season__paragraph w-25 pb-5">Most calendars are designed for teams.Slate s designed for freelancers </p>
+                </div>
+
+                <div class="season__right-side stivejobs"></div>
+            </div>
+        </div>
+    </section>
+    <!-- SEASON -->
+
     <!-- FOOTER -->
-    <footer>
-        <div class="container footer__container text-center">
-            <h6 class="footer__paragraph text-secondary fw-bold pt-4 pb-4">Made With Love By Figmaland All Right Reserved </h6>
+    <footer class="footer">
+        <div class="container p-3">
+            <h6 class="footer__text text-center fw-bold text-secondary">Made With Love By Figmaland All Right Reserved</h6>
         </div>
     </footer>
     <!-- /FOOTER -->
-    
-    <!-- JAVASCRIPT -->
+
     <script src="./js/bootstrap.js"></script>
-    <!-- /JAVASCRIPT -->
 </body>
 </html>

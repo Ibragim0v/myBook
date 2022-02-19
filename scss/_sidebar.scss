@@ -1,0 +1,26 @@
+.sidebar {
+    background-color: #252B42;
+    margin-top: 100px;
+
+    &__container {
+        max-width: 1111px;
+        width: 100%;
+    }
+
+    &__heading {
+        width: 303px;
+    }
+
+    &__paragraph {
+        width: 279px;
+    }
+    &__btn {
+        width: 329px;
+        height: 52px;
+    }
+
+    &__text {
+        width: 286px;
+        font-size: 14px;
+    }
+}

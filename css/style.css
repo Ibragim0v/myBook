@@ -1,63 +1,89 @@
 /* montserrat-regular - latin */
 @font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  src: local(""), url("./../font/montserrat-v23-latin-regular.woff2") format("woff2"), url("./../font/montserrat-v23-latin-regular.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* montserrat-700 - latin */
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  src: local(""), url("./../font/montserrat-v23-latin-700.woff2") format("woff2"), url("./../font/montserrat-v23-latin-700.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-* {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-}
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('./../font/montserrat-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./../font/montserrat-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('./../font/montserrat-v23-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./../font/montserrat-v23-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
 
 body {
-  overflow-x: hidden;
-  font-family: "Montserrat", "Arial", sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 p {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0%;
-  padding: 0%;
-}
-
-a {
-  text-decoration: none;
-}
-
-.clr {
-  clear: both;
-}
-
-img {
-  vertical-align: middle;
+    overflow-x: hidden;
+    font-family: 'Montserrat';
 }
 
 .hero {
-  background-color: #252B42;
+    background-color: #252B42;
 }
-.hero__heading {
-  width: 475px;
+
+.sidebar__text {
+    color: #252B42;
+    width: 225px;
 }
-.hero__paragraph {
-  width: 500px;
+
+.order__text {
+    color: #252B42;
 }
-.hero__btn {
-  width: 194px;
-  height: 62px;
-}/*# sourceMappingURL=style.css.map */
+
+.widget__text {
+    color: #252B42;
+}
+
+.widget__text-item {
+    color: #252B42;
+}
+
+.widget__job {
+    color: #252B42;
+}
+
+.basic__heading-text {
+    color: #252B42;
+}
+
+.basic__heading {
+    color: #252B42;
+}
+
+ .season {
+     background-color: #252B42;
+     position: relative;
+ }
+
+.season__right-side::before {
+    content: "";
+    position: absolute;
+    top: 7%;
+    right: 25%;
+    width: 420px;
+    height: 450px;
+    background-image: url('./../img/stive.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 24px;
+    z-index: 10;
+}
+
+.season__right-side::after {
+    content: "";
+    position: absolute;
+    top: 37%;
+    right: 25%;
+    width: 153px;
+    height: 315px;
+    background-image: url('./../img/jobs.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 40px;
+    z-index: 10;
+}
